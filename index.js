@@ -93,9 +93,9 @@ function finalScore(callback, numInnings){
   const score = () => {
     for (let i = 0; i < numInnings; i++){
       scoreCountHome += callback();
-      console.log(scoreCountHome);
+      console.log("This is the Home Inning Tracker from Task 3:", scoreCountHome);
       scoreCountAway += callback();
-      console.log(scoreCountAway);
+      console.log("This is the Away Inning Tracker from Task 3:", scoreCountAway);
     } // closes for loop
   return [scoreCountHome, scoreCountAway];
   } // closes score function
@@ -140,9 +140,9 @@ function scoreboard(callbackOne, callbackTwo, numInnings) {
   const score = () => {
     for (let i = 0; i < numInnings; i++){
       scoreCountHome += callbackOne();
-      console.log(scoreCountHome);
+      console.log("This is the Home Inning Tracker from Task 4:", scoreCountHome);
       scoreCountAway += callbackOne();
-      console.log(scoreCountAway);
+      console.log("This is the Away Inning Tracker from Task 4:", scoreCountAway);
       scoreCountArray[i] = callbackTwo(scoreCountHome, scoreCountAway);
     } // closes for loop
   return [scoreCountArray];
