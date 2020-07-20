@@ -42,6 +42,10 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  Closure occurs when a function is returned within a function. The nested function
+  can reach out within the closure scope to access the variables within that scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +67,17 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+The closure is on line 53-58. A function is returned
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+
+Calling dansRoll will always pass the "Dan" string to the anonymous function, but will generate a new number with the RNG.
+
 c. What is the lexical scope of `newRoll`? 
+
+newRoll is scoped to the anonymous function returned by the personalDice function.
 
 ### Task 2c - Exit Ticket
 
